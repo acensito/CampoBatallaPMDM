@@ -1,23 +1,22 @@
 package com.frg.pmdm.campobatallapmdm;
 
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-
-import android.app.Activity;
-import android.os.Bundle;
-import android.view.View;
 
 import com.frg.pmdm.campobatallapmdm.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding bind;
-
     NavHostFragment navHostFragment;
     NavController navController;
 
@@ -36,8 +35,5 @@ public class MainActivity extends AppCompatActivity {
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
 
         NavigationUI.setupWithNavController(bind.toolbar, navController, appBarConfiguration);
-
     }
-
-
 }

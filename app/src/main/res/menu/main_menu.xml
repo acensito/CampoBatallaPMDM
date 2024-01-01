@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/action_prueba1"
+        android:id="@+id/menu_settings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:title="Prueba 1"
-        app:showAsAction="ifRoom|withText"
-        android:icon="@drawable/ic_launcher_foreground"/>
-    <item
-        android:id="@+id/action_prueba2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:title="Prueba 2"
-        app:showAsAction="ifRoom"/>
+        android:title="Settings"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/baseline_settings_24"/>
 </menu>
